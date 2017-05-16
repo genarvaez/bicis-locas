@@ -5,6 +5,10 @@ function validateForm(){
 	var email = document.getElementById("input-email");
 	var password = document.getElementById("input-password");
 	var selected = document.getElementById("select").selectedIndex;
+
+	document.querySelectorAll(".form-signup span").forEach(function(e){
+		e.remove();
+	})
 	
 	//validacion de los campos
 	if (name.value == null || name.value.length == 0 

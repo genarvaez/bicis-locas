@@ -9,7 +9,7 @@ function validateForm(){
 	document.querySelectorAll(".form-signup span").forEach(function(e){
 		e.remove();
 	})
-	
+
 	//validacion de los campos
 	if (name.value == null || name.value.length == 0 
 		|| name.value.charAt(0) !== name.value.charAt(0).toUpperCase()){
